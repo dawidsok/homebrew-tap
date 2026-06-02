@@ -5,13 +5,13 @@
 class Tickcats < Formula
   desc "Keyboard-first local kanban board for solo developers"
   homepage "https://github.com/dawidsok/tickcats"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dawidsok/tickcats/releases/download/v0.2.0/tickcats_0.2.0_darwin_amd64.tar.gz"
-      sha256 "74d324028d643d78b7a9a91b2f17636945900e95c1e56f5b9861975c6f748719"
+      url "https://github.com/dawidsok/tickcats/releases/download/v0.2.1/tickcats_0.2.1_darwin_amd64.tar.gz"
+      sha256 "ea43f6aeb1279b525403452c42d8f0aeefdd4bb99ef552682992c427d413f4bb"
 
       define_method(:install) do
         bin.install "tickcats"
@@ -21,8 +21,8 @@ class Tickcats < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dawidsok/tickcats/releases/download/v0.2.0/tickcats_0.2.0_darwin_arm64.tar.gz"
-      sha256 "6ffb892e45f2a2b3789f32fdaa70782d77c654897182ea7fa20a572e46f69da1"
+      url "https://github.com/dawidsok/tickcats/releases/download/v0.2.1/tickcats_0.2.1_darwin_arm64.tar.gz"
+      sha256 "71fcf683014a0d1a44070924c3ad1c3ffccd57cdf279e6344877d4dd3e75d334"
 
       define_method(:install) do
         bin.install "tickcats"
@@ -35,8 +35,8 @@ class Tickcats < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dawidsok/tickcats/releases/download/v0.2.0/tickcats_0.2.0_linux_amd64.tar.gz"
-      sha256 "e36ad8bc920d36f5532fd5e6f419d7a0dc822b562c5caee469ae4f58aef1080f"
+      url "https://github.com/dawidsok/tickcats/releases/download/v0.2.1/tickcats_0.2.1_linux_amd64.tar.gz"
+      sha256 "97c816928220ea888088d661e3f71c19b655fa5753e510273696249e702ba60e"
       define_method(:install) do
         bin.install "tickcats"
         bash_completion.install "completions/tickcats.bash" => "tickcats"
@@ -45,8 +45,8 @@ class Tickcats < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dawidsok/tickcats/releases/download/v0.2.0/tickcats_0.2.0_linux_arm64.tar.gz"
-      sha256 "26d1687de080d173bf1b40671ae39d662aa4711f02d647cba76597b082f406f5"
+      url "https://github.com/dawidsok/tickcats/releases/download/v0.2.1/tickcats_0.2.1_linux_arm64.tar.gz"
+      sha256 "e72740dd9804b59783c1cf1729d5040a8b453a36e57a64ccd9c16cdb77ace182"
       define_method(:install) do
         bin.install "tickcats"
         bash_completion.install "completions/tickcats.bash" => "tickcats"
